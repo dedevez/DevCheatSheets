@@ -127,7 +127,6 @@ We welcome contributions to this repository! If you have a cheat sheet idea or w
 
 We plan to enhance this repository with:
 
-- **Interactive Previews**: Integrating platforms like [Markdown Live Preview](https://markdownlivepreview.com/) for better visualization.
 - **Extended Topics**: Adding more advanced guides for DevOps, machine learning, and cloud computing.
 
 ---
