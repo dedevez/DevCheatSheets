@@ -1,100 +1,71 @@
-
 # DevCheatSheets
 
-Welcome to **DevCheatSheets** – your one-stop repository for interactive, step-by-step cheat sheets and guides on common software development tasks. This repository is designed to help developers, from beginners to experts, quickly set up and explore projects, tools, and workflows with ease.
+Welcome to **DevCheatSheets** – your one-stop repository for clear, step-by-step cheat sheets and guides on common software development tasks. This repository is designed to help developers, from beginners to experts, quickly set up and explore projects, tools, and workflows with ease.
 
-Each cheat sheet is a **Jupyter Notebook** that combines explanations, code snippets, and live executable cells. Whether you're starting a new project, managing your workflow, or exploring best practices in software development, these guides are here to make your life easier!
+Each cheat sheet is a **Markdown (`.md`) file**, combining explanations, examples, and actionable steps. Whether you're starting a new project, managing your workflow, or exploring best practices in software development, these guides are here to make your life easier!
 
 ---
 
 ## Table of Contents
 
-1. [Features](#features)  
-2. [Getting Started](#getting-started)  
-   - [Option 1: Jupyter Notebook Installation](#option-1-jupyter-notebook-installation)  
-   - [Option 2: VS Code Setup](#option-2-vs-code-setup)  
-   - [Option 3: IntelliJ IDEA Setup](#option-3-intellij-idea-setup)  
-3. [Repository Structure](#repository-structure)  
-4. [Using the Cheat Sheets](#using-the-cheat-sheets)  
-5. [Contribution Guidelines](#contribution-guidelines)  
-6. [Future Expansion](#future-expansion)  
-7. [License](#license)  
+1. [Features](#features)
+2. [Getting Started](#getting-started)
+3. [Repository Structure](#repository-structure)
+4. [Using the Cheat Sheets](#using-the-cheat-sheets)
+5. [Contribution Guidelines](#contribution-guidelines)
+6. [Future Expansion](#future-expansion)
+7. [License](#license)
 
 ---
 
 ## Features
 
-- Interactive guides for popular software development activities.  
-- Hands-on Jupyter Notebooks with runnable code examples.  
+- Easy-to-read guides for popular software development activities.
+- Markdown files with formatted text, code blocks, and inline explanations.
 - Guides for setting up and using tools like:
+
   - Django
   - React
   - Docker
   - GitHub Actions CI/CD Pipelines
   - Git
-  - [Additional topics coming soon!]  
+  - [Additional topics coming soon!]
 
-- Easy-to-follow explanations in Markdown cells combined with executable Python and shell code.  
-- Beginner-friendly setup instructions, with plans to grow into a resource for developers at all levels.
+- Beginner-friendly instructions, with plans to grow into a resource for developers at all levels.
 
 ---
 
 ## Getting Started
 
-To use this repository, you’ll need to set up a working environment that supports Jupyter Notebooks. Below are three options to choose from based on your preferred development setup.
+Using this repository is simple! Since all cheat sheets are written in Markdown, you can open them directly in:
 
-### Option 1: Jupyter Notebook Installation
-
-1. Install Jupyter using pip:
-   ```bash
-   pip install notebook
-   ```
-2. Start the Jupyter Notebook server:
-   ```bash
-   jupyter notebook
-   ```
-3. Open the desired `.ipynb` file from this repository.
-
----
-
-### Option 2: VS Code Setup
-
-1. Download and install [Visual Studio Code](https://code.visualstudio.com/).  
-2. Install the **Jupyter** extension from the Extensions Marketplace.  
-3. Open any `.ipynb` file in VS Code to edit and run the cheat sheets.
-
----
-
-### Option 3: IntelliJ IDEA Setup
-
-1. Download and install [IntelliJ IDEA](https://www.jetbrains.com/idea/).  
-2. Install the **Jupyter Notebooks Plugin** from the Plugins Marketplace.  
-3. Configure a Python interpreter in IntelliJ (if not already done).  
-4. Open the `.ipynb` file and start editing interactively.
+1. **GitHub**: View and navigate cheat sheets directly on the repository page.
+2. **Any Text Editor**: Use editors like Visual Studio Code, IntelliJ IDEA, or Notepad++ for a clean Markdown viewing experience.
+3. **Markdown Renderers**: Use tools like Typora or Obsidian for a polished, readable display.
 
 ---
 
 ## Repository Structure
 
-The repository is organized into topic-based directories. Each directory contains one or more Jupyter Notebooks.
+The repository is organized into topic-based directories. Each directory contains one or more Markdown files.
 
 ```
 ├── README.md
 ├── django/
-│   ├── 01_setting_up_django.ipynb
-│   └── 02_django_advanced_models.ipynb
+│   ├── setting_up_django.md
+│   └── django_advanced_models.md
 ├── react/
-│   ├── 01_setting_up_react.ipynb
-│   └── 02_state_management_with_redux.ipynb
+│   ├── setting_up_react.md
+│   └── state_management_with_redux.md
 ├── docker/
-│   ├── 01_setting_up_docker.ipynb
-│   └── 02_dockerizing_apps.ipynb
+│   ├── setting_up_docker.md
+│   └── dockerizing_apps.md
 ├── ci_cd/
-│   ├── 01_github_actions_basics.ipynb
-│   └── 02_deploying_with_docker.ipynb
+│   ├── github_actions_basics.md
+│   └── deploying_with_docker.md
 ├── git/
-│   ├── 01_setting_up_git.ipynb
-│   └── 02_git_branching_and_merging.ipynb
+│   ├── setting_up_git.md
+│   └── git_branching_and_merging.md
 ```
 
 ---
@@ -102,14 +73,15 @@ The repository is organized into topic-based directories. Each directory contain
 ## Using the Cheat Sheets
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/dedevez/DevCheatSheets.git
    cd DevCheatSheets
    ```
 
-2. Open the `.ipynb` file of interest in your preferred environment (Jupyter, VS Code, or IntelliJ IDEA).
+2. Open the `.md` file of interest using any Markdown viewer or editor.
 
-3. Follow along with the instructions and execute the cells to see live results.
+3. Follow the instructions to complete your task efficiently.
 
 ---
 
@@ -118,46 +90,48 @@ The repository is organized into topic-based directories. Each directory contain
 We welcome contributions to this repository! If you have a cheat sheet idea or want to improve an existing guide, follow these steps:
 
 ### Naming Convention
-- Use lowercase letters and underscores to separate words.  
-- Prefix filenames with a number for ordering, if needed.  
-- Include the topic and specific focus in the filename.
 
-**Examples:**  
-- `01_setting_up_django.ipynb`  
-- `02_django_advanced_models.ipynb`
+- Use lowercase letters and underscores to separate words.
+- Each file name should be unique and descriptive.
+- Avoid numbering files; rely on unique names to identify the topic and focus.
+
+**Examples:**
+
+- `setting_up_django.md`
+- `django_advanced_models.md`
 
 ### Submission Standards
-- **Python Version:** Use Python 3.9 or later.  
-- **Markdown Cells:**  
-  - Write clear and concise explanations.  
-  - Use headers, bullet points, and code fences for clarity.  
-- **Code Style:**  
-  - Follow PEP 8 for Python code.  
-  - Include comments and docstrings in code cells.  
-- **Interactive Examples:** Include runnable code snippets with meaningful outputs.  
-- **Metadata:** Strip unnecessary metadata from notebooks using tools like [nbstripout](https://github.com/kynan/nbstripout) to avoid conflicts in pull requests.
+
+- **Markdown Structure**:
+  - Use headers, bullet points, and code fences for clarity.
+  - Write clear and concise explanations with step-by-step instructions.
+- **Code Style**:
+  - Use appropriate syntax highlighting in fenced code blocks (e.g., ` ```python `, ` ```bash `).
+  - Include meaningful examples and comments for clarity.
+- **Formatting**:
+  - Use proper Markdown conventions for lists, links, and images.
 
 ### Steps to Contribute
-1. Fork this repository.  
-2. Create a new branch:  
+
+1. Fork this repository.
+2. Create a new branch:
    ```bash
    git checkout -b feature/your-cheat-sheet-name
    ```
-3. Add your cheat sheet (as a Jupyter Notebook) in the appropriate directory or create a new one.  
+3. Add your cheat sheet (as a Markdown file) in the appropriate directory or create a new one.
 4. Submit a pull request explaining your contribution.
 
 ---
 
 ## Future Expansion
 
-We plan to integrate auto-rendering tools like [Binder](https://mybinder.org/) to allow users to interact with the notebooks directly in their browsers. This feature will be added as the repository evolves.
+We plan to enhance this repository with:
+
+- **Interactive Previews**: Integrating platforms like [Markdown Live Preview](https://markdownlivepreview.com/) for better visualization.
+- **Extended Topics**: Adding more advanced guides for DevOps, machine learning, and cloud computing.
 
 ---
 
 ## License
 
 This repository is licensed under the MIT License. Feel free to use and share the content, but please provide proper attribution.
-
----
-
-### Let me know if you’d like further tweaks or additions!
