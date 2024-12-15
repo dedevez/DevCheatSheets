@@ -49,7 +49,7 @@ brew install postgresql
 Log in as the default PostgreSQL user (`postgres`):
 
 ```bash
-sudo -i -u postgres psql
+psql -U postgres
 ```
 
 ### Create a Database
@@ -69,6 +69,21 @@ CREATE USER myuser WITH PASSWORD 'mypassword';
 ```sql
 GRANT ALL PRIVILEGES ON DATABASE mydatabase TO myuser;
 ```
+
+You can also make the user the owner of the schema:
+
+```sql
+ALTER SCHEMA public OWNER TO your_database_user;
+```
+
+### Verify Permissions
+Run the following command to check the permissions on the public schema:
+
+```sql
+\dn+
+```
+Ensure that your user has the appropriate privileges (e.g., CREATE, USAGE).
+
 
 ### Exit `psql`
 
