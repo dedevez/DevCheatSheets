@@ -83,6 +83,7 @@ Set up a basic firewall to allow only necessary services.
 2. Allow HTTP and HTTPS traffic:
    ```bash
    sudo ufw allow 'Nginx Full'
+   # need to install Nginx first
    ```
 
 3. Enable the firewall:
